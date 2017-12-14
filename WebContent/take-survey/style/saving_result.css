@@ -1,0 +1,139 @@
+/* workerManager */
+
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+* {
+	font-family: 'Jeju Gothic', sans-serif;
+}
+
+.worker_container {
+	width: 600px ;
+	background-color: #aaddff ;
+	display: flex ;
+	justify-content : space-around;
+	
+	margin: 1px ;
+	padding: 2px ;
+}
+
+.listform{
+	display: flex ;
+	flex-direction: row ;
+	justify-content: center ;
+	
+	background-color: #ffffff ;
+	width: 620px ;
+
+}
+
+li {
+	margin: 2px 3px ;
+	background-color: #ffaadd ;
+}
+
+body{
+	display: flex ;
+	justify-content: center ;
+	
+	background-color: #eaeaea ;
+	
+}
+
+input[type="text"]{
+	width:120px; height:20px;
+	
+	border:none;
+	padding:15px;
+	font-size:16px;
+	color:#aaa;
+}
+
+
+.wrapper{
+	display: flex ;
+	flex-direction: column ;
+	justify-content: center ;
+	width: 650px ;
+	background-color: #ffffff ;
+	box-shadow: 0 0 8px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.12);
+}
+
+.insert_worker{
+	position: absolute;
+}
+
+
+
+
+
+
+h1 {
+	color: #4AB367 ;
+	font-weight: normal;
+	font-size: 40px ;
+}
+
+#searchform{
+	background-color: #4AB367 ;
+}
+
+/* ㅠㅠㅠ */
+.blueone {
+  border-collapse: collapse;
+}  
+.blueone th {
+  padding: 2px;
+  background-color: #4AB367;
+  color: #ffffff;
+  font-size: 10pt;
+  font-weight: normal;
+  text-align: center;
+  height: 10px ;
+  
+}
+
+.blueone th:first-child{
+  border-radius: 5px 0px 0px 0px ;
+}
+.blueone th:last-child{
+  border-radius: 0px 5px 0px 0px ;
+}
+.blueone td {
+  color: #232A2A;
+  padding: 0px;
+  border-bottom: 1px solid #ddd;
+  font-size: 10pt;
+  height: 10px;
+  text-align: center;
+}
+.blueone td:nth-child(1){
+	width: 100px ;
+}
+.blueone td:nth-child(2){
+	width: 100px ;
+}
+.blueone td:nth-child(3){
+	width: 100px ;
+}
+.blueone td:last-child{
+	width: 100px ;
+}
+.blueone tr:hover td {
+  visibility: visible;
+}
+.blueone tr:hover {
+  background-color: #ECF0F0 ;
+}
+
+.blueone tr:hover a {
+  visibility: visible;
+}
+
+.btns {
+	visibility: hidden ;
+	color: #97A6A7 ;
+	font-size: 18px ;
+	margin-right: 1px ;
+	margin-top: 2px ;
+}
+
+

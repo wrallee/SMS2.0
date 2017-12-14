@@ -1,0 +1,57 @@
+/* <style type="text/css">
+input[type="radio"], input[type="checkbox"] {
+	display: inline-block; 
+	width: 25px; 
+	height: 25px; 
+	vertical-align: middle; 
+	-webkit-appearance: none; 
+	border-radius: 0; border: 0; margin:0; padding:0; cursor: pointer 
+	}
+input[type="radio"] { background: url(btn_radio.png) no-repeat 0 0; }
+input[type="checkbox"] { background: url(btn_check.png) no-repeat 0 0; }
+input[type="checkbox"]:checked, input[type="radio"]:checked { background-position: 0 -25px; }
+input[type="checkbox"]:disabled, input[type="radio"]:disabled { background-position: 0 -50px; }
+input[type="checkbox"]:disabled:checked, input[type="radio"]:disabled:checked { background-position: 0 -75px; }
+</style> */
+
+input[type=checkbox] {  
+    display: none;  
+}
+
+input[type=checkbox] + label{
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    padding-left: 25px;  
+    margin-right: 15px;  
+    font-size: 13px;
+}
+
+input[type=checkbox]+ label:before {     
+
+    content: "";  
+    display: inline-block;  
+  
+    width: 20px;  
+    height: 20px;  
+  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 1px;  
+    background-color: #ccc;  
+    border-radius: 2px; 
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}
+input[type=checkbox]:checked + label:before { 
+
+    content: "\2713";  /* 체크모양 */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+    font-size: 18px; 
+    font-weight:800; 
+    color: #fff;  
+    background:#2f87c1;
+    text-align: center;  
+    line-height: 18px;  
+
+} 
